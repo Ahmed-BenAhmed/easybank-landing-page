@@ -1,0 +1,44 @@
+@import './variables.scss';
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+@import './responsive.scss';
+
+body {
+	font-family: $font;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: $Very-Light-Gray;
+}
+
+.my-btn,
+.my-btn:hover {
+	color: $White;
+}
+.my-btn {
+	padding: 7px 20px;
+	background-image: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+	border-radius: 100px;
+}
+.my-btn:hover {
+	opacity: 0.5;
+}
+a {
+	color: #000;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+p,
+span {
+	color: $Grayish-Blue;
+	font-size: $font-size;
+}
+h2,
+h3 {
+	padding: 25px 0;
+}
+.text-end {
+	text-align: end;
+}

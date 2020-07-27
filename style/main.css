@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+body header {
+  position: relative;
+  z-index: 2;
+}
+body header .navbar .nav-item {
+  position: relative;
+}
+body header .navbar .nav-item:hover:after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+  width: 100%;
+  height: 3px;
+}
+
+main {
+  position: relative;
+}
+main section {
+  padding: 50px 0;
+}
+main .home .background .first {
+  position: absolute;
+  z-index: -3;
+  background-image: url("../../images/bg-intro-desktop.svg");
+  width: 1000px;
+  height: 1000px;
+  right: -17%;
+  top: -15%;
+}
+main .home .background .second {
+  position: absolute;
+  width: auto;
+  right: -9%;
+  top: -6%;
+  z-index: 0;
+}
+main .home .introduction {
+  padding: 100px 0;
+  width: 50%;
+}
+main .home .introduction h2 {
+  font-size: 48px;
+}
+main .home .introduction p {
+  margin: 20px 0;
+}
+main .why-choose-us {
+  background-color: #f3f4f6;
+}
+main .why-choose-us .s-head p {
+  width: 50%;
+}
+main .why-choose-us .s-body {
+  padding-top: 50px;
+}
+main .articles img {
+  width: 100%;
+  height: 200px;
+}
+main .articles .card {
+  border-radius: 10px;
+  background-color: white;
+}
+main .articles .card .card-img img {
+  border-radius: 10px 10px 0 0;
+}
+main .articles .card .card-details {
+  padding: 5px 10px;
+}
+main .articles .card .card-author,
+main .articles .card .card-title,
+main .articles .card .card-summary {
+  padding: 0 10px;
+}
+main .articles .card .card-author span {
+  font-size: 14px;
+}
+main .articles .card .card-title a:hover {
+  color: #31d35c;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #2d314d;
+  padding: 20px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #31d35c;
+}
+footer .social-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+}
+footer .social-links li {
+  padding-left: 10px;
+}
+footer .social-links li:hover svg path {
+  fill: #31d35c;
+}
+footer .my-btn {
+  margin: 25px 0;
+}
+
+@media (max-width: 769px) {
+  main .home .background .first {
+    background-image: url("../../images/bg-intro-mobile.svg");
+    width: 380px;
+    height: 345px;
+    right: -5px;
+    top: 0;
+    background-repeat: no-repeat;
+  }
+  main .home .background .second {
+    position: initial;
+    margin: auto;
+    margin-top: -170px;
+    width: 100%;
+  }
+  main .home .introduction {
+    width: 100%;
+    padding: 0;
+    padding-top: 150px;
+  }
+  main .home .introduction h2 {
+    font-size: 40px;
+  }
+  main .why-choose-us {
+    text-align: center;
+  }
+  main .why-choose-us .s-head p {
+    width: 100%;
+  }
+  main .articles .card {
+    margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .social-links {
+    margin: 30px auto;
+    width: fit-content;
+  }
+  footer .text-end {
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  main .home .background .second {
+    width: 60%;
+  }
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+
+.my-btn,
+.my-btn:hover {
+  color: white;
+}
+
+.my-btn {
+  padding: 7px 20px;
+  background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+  border-radius: 100px;
+}
+
+.my-btn:hover {
+  opacity: 0.5;
+}
+
+a {
+  color: #000;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p,
+span {
+  color: #9698a6;
+  font-size: 18px;
+}
+
+h2,
+h3 {
+  padding: 25px 0;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/*# sourceMappingURL=main.css.map */
